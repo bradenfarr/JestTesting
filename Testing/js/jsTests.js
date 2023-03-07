@@ -44,7 +44,7 @@ function capitilize (str) {
 
 //reverse string function
 
-function reversestring(str) {
+function reverseString(str) {
   if (str === "") {
     return "Enter text to reverse it"
   } else if (typeof str === "string") {
@@ -104,7 +104,7 @@ const caesarCipher = function(text, shift) {
         }
       }
   
-      result += string.fromCharCode(charCode);
+      result += String.fromCharCode(charCode);
     }
 
     if (result === "") {
@@ -116,4 +116,4 @@ const caesarCipher = function(text, shift) {
     }
 }
 
-module.exports = { calculator, capitilize, reversestring, analyzeArray, caesarCipher};
+module.exports = { calculator, capitilize, reverseString, analyzeArray, caesarCipher};
